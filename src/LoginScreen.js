@@ -10,7 +10,7 @@ import {
   FormControl,
   FormLabel,
   Input,
-  Stack,
+  Stack
 } from '@chakra-ui/react';
 
 const LoginForm = ({ onSubmit, ...props }) => (
@@ -61,7 +61,7 @@ const LoginForm = ({ onSubmit, ...props }) => (
 );
 
 LoginForm.propTypes = {
-  onSubmit: PropTypes.func.isRequired,
+  onSubmit: PropTypes.func.isRequired
 };
 
 export const LoginScreen = ({ onLogIn }) => (
@@ -81,5 +81,5 @@ export const LoginScreen = ({ onLogIn }) => (
 );
 
 LoginScreen.propTypes = {
-  onLogIn: PropTypes.func.isRequired,
+  onLogIn: PropTypes.func.isRequired
 };

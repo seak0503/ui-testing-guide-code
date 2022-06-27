@@ -25,5 +25,5 @@ export const EmptyState = ({ Icon, title, subtitle, ...props }) => (
 EmptyState.propTypes = {
   Icon: PropTypes.elementType.isRequired,
   title: PropTypes.string.isRequired,
-  subtitle: PropTypes.string.isRequired,
+  subtitle: PropTypes.string.isRequired
 };

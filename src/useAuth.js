@@ -3,7 +3,7 @@ import { useReducer } from 'react';
 function authenticate(options) {
   return fetch('/authenticate', {
     method: 'POST',
-    ...options,
+    ...options
   }).then((res) => res.json());
 }
 

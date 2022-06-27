@@ -9,7 +9,7 @@ const LoadingTask = () => (
   <Flex
     _notLast={{
       borderBottom: '1px',
-      borderColor: 'gray.200',
+      borderColor: 'gray.200'
     }}
     bg="white"
     alignItems="center"
@@ -31,12 +31,12 @@ export function TaskList({
   tasks,
   onTogglePinTask,
   onArchiveTask,
-  onEditTitle,
+  onEditTitle
 }) {
   const events = {
     onTogglePinTask,
     onArchiveTask,
-    onEditTitle,
+    onEditTitle
   };
 
   if (loading) {
@@ -62,7 +62,7 @@ export function TaskList({
 
   const tasksInOrder = [
     ...tasks.filter((t) => t.state === 'TASK_PINNED'),
-    ...tasks.filter((t) => t.state !== 'TASK_PINNED'),
+    ...tasks.filter((t) => t.state !== 'TASK_PINNED')
   ];
 
   return (
@@ -79,9 +79,9 @@ TaskList.propTypes = {
   tasks: PropTypes.arrayOf(Task.propTypes.task).isRequired,
   onTogglePinTask: PropTypes.func.isRequired,
   onArchiveTask: PropTypes.func.isRequired,
-  onEditTitle: PropTypes.func.isRequired,
+  onEditTitle: PropTypes.func.isRequired
 };
 
 TaskList.defaultProps = {
-  loading: false,
+  loading: false
 };

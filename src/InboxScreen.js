@@ -72,9 +72,9 @@ export const InboxScreen = ({ error }) => {
 };
 
 InboxScreen.propTypes = {
-  error: PropTypes.string,
+  error: PropTypes.string
 };
 
 InboxScreen.defaultProps = {
-  error: null,
+  error: null
 };
