@@ -11,7 +11,7 @@ export default {
   }
 };
 
-const Template = (arg) => <Task {...args} />;
+const Template = (args) => <Task {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {
