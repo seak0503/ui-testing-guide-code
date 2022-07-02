@@ -7,7 +7,8 @@ export default {
   argTypes: {
     onArchiveTask: { action: 'onArchiveTask' },
     onTogglePinTask: { action: 'onTogglePinTask' },
-    onEditTitle: { action: 'onEditTitle' }
+    onEditTitle: { action: 'onEditTitle' },
+    onDeleteTask: { action: 'onDeleteTask' }
   }
 };
 
