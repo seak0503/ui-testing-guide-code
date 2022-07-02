@@ -31,12 +31,14 @@ export function TaskList({
   tasks,
   onTogglePinTask,
   onArchiveTask,
-  onEditTitle
+  onEditTitle,
+  onDeleteTask
 }) {
   const events = {
     onTogglePinTask,
     onArchiveTask,
-    onEditTitle
+    onEditTitle,
+    onDeleteTask
   };
 
   if (loading) {
@@ -79,7 +81,8 @@ TaskList.propTypes = {
   tasks: PropTypes.arrayOf(Task.propTypes.task).isRequired,
   onTogglePinTask: PropTypes.func.isRequired,
   onArchiveTask: PropTypes.func.isRequired,
-  onEditTitle: PropTypes.func.isRequired
+  onEditTitle: PropTypes.func.isRequired,
+  onDeleteTask: PropTypes.func.isRequired
 };
 
 TaskList.defaultProps = {
